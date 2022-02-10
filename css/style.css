@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap");
+
+body {
+  font-family: "Baloo 2", cursive;
+}
+
+/* Navbar */
+
+.navbar {
+  opacity: 0.8;
+}
+
+/* Home Section */
+
+#home-section {
+  margin-top: 120px;
+}
+
+#home-section .brand-heading {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+#home-section .tagline {
+  font-size: 30px;
+  color: #000000;
+}
