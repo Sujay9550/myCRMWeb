@@ -68,3 +68,22 @@ body {
   box-shadow: 0 4px 8px 0 rgba(167, 192, 250, 0.2),
     0 6px 20px 0 rgba(167, 192, 250, 0.19);
 }
+
+#explore-section .explore,
+#create-section .create {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#explore-section .primary {
+  background-color: #c6e0f7;
+}
+
+#create-section .warning {
+  background-color: #ffecb8;
+}
+
+#explore-section .lead,
+#create-section .lead {
+  font-size: 18px;
+}
