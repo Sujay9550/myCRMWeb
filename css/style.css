@@ -69,8 +69,12 @@ body {
     0 6px 20px 0 rgba(167, 192, 250, 0.19);
 }
 
+/* Explore Create Share Contact Sections */
+
 #explore-section .explore,
-#create-section .create {
+#create-section .create,
+#share-section .share,
+#contact-section .contact {
   font-size: 30px;
   font-weight: 400;
 }
@@ -83,7 +87,17 @@ body {
   background-color: #ffecb8;
 }
 
+#share-section .success {
+  background-color: #dbffd9;
+}
+
+#contact-section .danger {
+  background-color: #fcd7d7;
+}
+
 #explore-section .lead,
-#create-section .lead {
+#create-section .lead,
+#share-section .lead,
+#contact-section .lead {
   font-size: 18px;
 }
