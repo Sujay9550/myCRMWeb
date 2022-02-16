@@ -101,3 +101,52 @@ body {
 #contact-section .lead {
   font-size: 18px;
 }
+
+/* Modal Section - Login Form */
+
+.hidden {
+  display: none;
+}
+
+.new-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.close-modal {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: #333;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Footer */
+
+#main-footer {
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+}
