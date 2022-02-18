@@ -50,3 +50,48 @@ document.addEventListener("keydown", (e) => {
     closeModal();
   }
 });
+
+// Smooth Scrolling with Navigation Links
+
+navLinks.forEach((el) => {
+  console.log(el);
+
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+    const link = e.target.getAttribute("href");
+    console.log(link);
+
+    document.querySelector(link).scrollIntoView({ behaviour: "smooth" });
+  });
+});
+
+// Revealing elements on Scroll - using IntersectionObserver API
+
+const allSections = document.querySelectorAll(".section");
+
+// Observer Callback Function
+const revealSection = (entries, observer) => {
+  const [entry] = entries;
+  console.log(entry);
+
+  if (!entry.isIntersecting) return;
+
+  // Revealing sections
+  entry.target.classList.remove("section--hidden");
+
+  // Unobserving Events
+  observer.unobserve(entry.target);
+};
+
+// Reveal Options
+const revealOptions = {
+  root: null,
+  threshold: 0.15,
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, revealOptions);
+
+allSections.forEach((section) => {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
+});
