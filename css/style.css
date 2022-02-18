@@ -71,6 +71,11 @@ body {
 
 /* Explore Create Share Contact Sections */
 
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 #explore-section .explore,
 #create-section .create,
 #share-section .share,
