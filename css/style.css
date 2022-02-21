@@ -148,6 +148,12 @@ body {
   cursor: pointer;
 }
 
+/* Lazy Image */
+
+.lazy-img {
+  filter: blur(20px);
+}
+
 /* Footer */
 
 #main-footer {
