@@ -10,6 +10,16 @@ body {
   opacity: 0.8;
 }
 
+.show-modal {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(141, 141, 141);
+}
+
+.show-modal:hover {
+  color: rgb(180, 180, 180);
+}
+
 /* Home Section */
 
 #home-section {
@@ -160,4 +170,17 @@ body {
   background: #333;
   color: #fff;
   font-size: 14px;
+}
+
+#main-footer p {
+  margin: 0;
+}
+
+#main-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#main-footer a:hover {
+  color: #c6e0f7;
 }
