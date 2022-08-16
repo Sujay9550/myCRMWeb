@@ -43,9 +43,6 @@ modalOverlay.addEventListener("click", closeModal);
 // Adding Event Listener for the keydown event
 
 document.addEventListener("keydown", (e) => {
-  console.log(e);
-  console.log(e.key);
-
   if (e.key === "Escape" && !newModal.classList.contains("hidden")) {
     closeModal();
   }
@@ -54,13 +51,9 @@ document.addEventListener("keydown", (e) => {
 // Smooth Scrolling with Navigation Links
 
 navLinks.forEach((el) => {
-  console.log(el);
-
   el.addEventListener("click", (e) => {
     e.preventDefault();
     const link = e.target.getAttribute("href");
-    console.log(link);
-
     document.querySelector(link).scrollIntoView({ behaviour: "smooth" });
   });
 });
@@ -72,7 +65,6 @@ const allSections = document.querySelectorAll(".section");
 // Observer Callback Function
 const revealSection = (entries, observer) => {
   const [entry] = entries;
-  console.log(entry);
 
   if (!entry.isIntersecting) return;
 
@@ -100,13 +92,11 @@ allSections.forEach((section) => {
 
 // Selecting the Images that have Lazy Loading Classes
 const imgTargets = document.querySelectorAll("img[data-src]");
-console.log(imgTargets);
 
 // Observer Callback function
 
 const loadImg = (entries, observer) => {
   const [entry] = entries;
-  console.log(entry);
 
   if (!entry.isIntersecting) return;
 
