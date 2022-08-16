@@ -10,7 +10,7 @@ This project was built using Javascript, [Bootstrap](https://getbootstrap.com) -
 - Lazy loading images
 - Login form.
 
-### Application Snapshots
+### Website Snapshots
 
 ![mycrm-home](/snapshots/mycrm-home.PNG)
 ![mycrm-explore-create](/snapshots/mycrm-explore-create.PNG)
